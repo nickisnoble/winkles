@@ -1,6 +1,34 @@
 html, body{
   height: 100%;
 }
-body{
-  padding: 5%;
+
+.contain{
+  padding-left: $space*1rem;
+  padding-right: $space*1rem;
+}
+.contain-left{
+  padding-left: $space*1rem;
+}
+.contain-right{
+  padding-right: $space*1rem;
+}
+
+.panel{
+  position: relative;
+  padding-top: $space*2rem;
+  padding-bottom: $space*2rem;
+}
+
+.full-page{
+  height: 100%;
+  height: 100vh;
+  width:  100%;
+  width:  100vw;
+}
+
+@media screen and (min-width: $tablet) {
+  .one-half{
+    width: 50%;
+    display: inline-block;
+  }
 }

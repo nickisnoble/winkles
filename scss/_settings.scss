@@ -1,19 +1,22 @@
 // Color
 $primary: #00c281;
-$secondary: #f6cad1;
+$secondary: #fa9;
 $dark: #333;
 
 
 // Type
-$sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+$sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Georgia, serif;
 
 $body-font-size:    20px;
-$body-line-height:  $perfect-fourth;
-$scale-factor:      $perfect-fourth;
+$body-line-height:  $perfect-fifth;
+$scale-factor:      $minor-third;
 $ie8compatability:  false;
 
 $space: $body-line-height;
 
 // Animation
 $duration: 300ms;
+
+// Breakpoints
+$tablet: 768px;

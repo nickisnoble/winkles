@@ -3,11 +3,11 @@ html { @include khtml(); }
 body { 
   @include kbody(); 
   font-family: $serif;
+  color: $dark;
 }
 
 %headings{
-  text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
   font-family: $sans;
 }
 
@@ -44,6 +44,15 @@ h6 {
 
 p{
   @extend %base-type;
+  &.lead{
+    @include ktype(2, 1, 1);
+    font-family: $sans;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $primary;
 }
 
 ul, ol {
