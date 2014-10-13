@@ -1,8 +1,6 @@
 #landing{
   padding-top: $navbar-height*2;
-  .headshot{
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  article{
+    flex: 2;
   }
 }
