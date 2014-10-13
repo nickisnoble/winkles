@@ -1,0 +1,13 @@
+%flexy{
+  padding: ($space * 0rem) ($space * 2rem);
+  flex: 1;
+}
+
+.box{
+  border: 3px solid black;
+  @extend %flexy;
+}
+
+.block{
+  @extend %flexy;
+}
