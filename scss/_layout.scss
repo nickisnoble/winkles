@@ -1,6 +1,10 @@
 .panel{
   position: relative;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .full-page{
@@ -8,4 +12,10 @@
   height: 100vh;
   width:  100%;
   width:  100vw;
+}
+
+.backgrounded{
+  text-shadow: 0 0 5px rgba(0,0,0,0.9);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
