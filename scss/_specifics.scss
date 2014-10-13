@@ -1,6 +1,14 @@
 #landing{
   padding-top: $navbar-height*2;
+  background-image: url('../imgs/DeathtoStock_Band6.jpg');
+  background-position: top left;
+
   article{
     flex: 2;
+  }
+  .headshot{
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
