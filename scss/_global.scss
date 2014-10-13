@@ -6,3 +6,10 @@
     transition: color $duration, background-color $duration, border-color $duration, opacity $duration, transform $duration;
   }
 }
+
+html, body{
+  height: 100%;
+  max-width: 100%;
+  color: $light;
+  background: $dark;
+}
