@@ -2,6 +2,7 @@
 $primary: #00c281;
 $secondary: #fa9;
 $dark: #333;
+$light: #ccc;
 
 
 // Type
@@ -13,7 +14,9 @@ $body-line-height:  $perfect-fifth;
 $scale-factor:      $minor-third;
 $ie8compatability:  false;
 
+// Layout
 $space: $body-line-height;
+$navbar-height: $space*2rem;
 
 // Animation
 $duration: 300ms;
