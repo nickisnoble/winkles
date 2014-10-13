@@ -2,7 +2,8 @@ html { @include khtml(); }
 
 body { 
   @include kbody(); 
-  font-family: $serif;
+  font-family: $sans;
+  font-weight: 300;
 }
 
 %headings{
@@ -46,6 +47,7 @@ p{
   &.lead{
     @include ktype(2, 1, 1);
     font-family: $sans;
+    font-weight: 400;
   }
 }
 
