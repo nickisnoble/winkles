@@ -12,16 +12,17 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <body>
 
-	<header class="site-header panel">
-		<h1 class="brand block"><a href="#">Spencer Winkles</a></h1>
-		<nav class="nav block double">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Spaces</a></li>
-			<li><a href="#">Contact</a></li>
+	<header class="site-header">
+		<h1 class="brand"><a href="#">Spencer Winkles</a></h1>
+		<nav class="nav">
+			<li><a href="#landing">Home</a></li>
+			<li><a href="#spaces">Spaces</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</nav>
 	</header>
 
@@ -36,52 +37,74 @@
 		</figure>
 	</section>
 
-	<section class="panel" id="spaces">
+	<section class="panel stretch" id="spaces">
 
-		<h2 class="box full backgrounded section-header">Recording Spaces</h2>
+		<div class="box block full-width backgrounded section-header">
+			<h2>Recording Spaces</h2>
+			<p class="lead">I'm extremely fortunate to have access to some of the best recording spaces in New Orleans. I can help you book studio time and we can make some world class music together.</p>
+			<p>To set up recording dates, <a href="#contact">get in touch.</a></p>
+		</div>
 
-		<figure class="box backgrounded" id="nic">
+		<figure class="box block half-page backgrounded" id="nic">
 			<h3>Nic of time</h3>
 			<figcaption class="shy">
 				<p>This studio is a little known treasure on the other side of the river. It features a Control room and a Drum room with an ISO Booth attached. The Vocal booth has a perfect line of site to the control room. It has 16 microphone channels, SPDIF, as well as midi support.</p>
 			</figcaption>
 		</figure>
 
-		<figure class="box backgrounded">
+		<figure class="box block half-page backgrounded" id="vital">
 			<h3>Vital Sounds</h3>
-			<img src="imgs/vital-sounds.jpg">
 			<figcaption class="shy">
 				<p>Loyola University New Orleans has a recording studio which is also scarcely known. It rests on the fourth floor of their music building (at the corner of St. Charles and Calhoun). Visit their website for a detailed list of rooms and Equipment.</p>
 			</figcaption>
 		</figure>
 
-		<figure class="box">
+		<figure class="box block half-page">
 			<h3>The Rig</h3>
 			<figcaption class="shy">
 				<p>Mobile recording at it's finest. "16 channels of multitrack in a rolling rack!" <strong>Coming soon.</strong></p>
 			</figcaption>
-		</figure>
+		</figure>	
 
 	</section>
 
-	<section class="panel quotes box" id="quotes">
-		<blockquote>“Spencer is one of the nicest, realest people I've ever worked with, and he knows his shit when it comes to audio. Do yourself a favor - hire him right now.”</blockquote>
+	<section class="panel box backgrounded full-page" id="quote">
+		<div class="block">
+			<blockquote>
+				<p>“Spencer is one of the nicest, realest people I've ever worked with, and he knows his shit when it comes to audio. Do yourself a favor - hire him right now.”</p>
+				<cite>– Some band</cite>
+			</blockquote>
+		</div>
 	</section>
 
+	<section class="panel box half-page stretch" id="contact">
+		<div class="block">
+			<blockquote>
+				<p>This is going to sound awesome.</p>
+			</blockquote>
+		</div>
+		<div class="block reversed">
+			<h2>Get In touch</h2>
+			<p>CELL: 504-555-1234</p>
+			<p>MAIL: hello@winkles.co</p>
+		</div>
+	</section>
 
-	<footer class="site-footer panel box">
-		<p class="copyright block">&copy; 2014 Spencer Winkles</p>
-		<ul class="social nav bock">
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">LinkedIn</a></li>
-			<li><a href="#">Soundcloud</a></li>
+	<footer class="site-footer panel">
+		<small class="copyright block">&copy; 2014 Spencer Winkles</small>
+		<ul class="social">
+			<li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-soundcloud fa-lg"></i></a></li>
 		</ul>
 	</footer>
 
 	<!-- Javascript -->
-	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+	</script>
 
 </body>
 </html>

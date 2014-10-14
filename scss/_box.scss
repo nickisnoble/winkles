@@ -1,21 +1,47 @@
-%flexy{
-  padding: ($space * 0rem) ($space * 2rem);
-  flex: 1;
+.panel{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  &.stretch{
+    align-items: stretch;
+  }
 }
 
 .box{
-  border: 3px solid black;
-  @extend %flexy;
+  border-bottom: 3px solid $light;
 }
 
 .block{
-  @extend %flexy;
+  padding: ($space * 0rem) ($space * 2rem);
+  flex: 1;
+  @media screen and (max-width: $tablet) {
+    flex-basis: 100%;
+    flex:1 !important;
+  }
 }
 
-.double{
-  flex:2;
+.double-width{
+  flex:1;
+  @media screen and (min-width: $tablet) {
+    flex:2;
+  }
 }
 
-.full{
+.full-width{
   flex-basis: 100%;
+}
+
+.half-page{
+  min-height: 45%;
+  min-height: 45vh;
+}
+
+.full-page{
+  min-height: 90%;
+  min-height: 90vh;
+  width:  100%;
+  width:  100vw;
 }

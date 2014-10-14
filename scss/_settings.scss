@@ -8,6 +8,7 @@ $light: #fff;
 // Type
 $sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: Georgia, serif;
+$fancy: 'Special Elite', monospace;;
 
 $body-font-size:    20px;
 $body-line-height:  $perfect-fifth;
@@ -16,10 +17,12 @@ $ie8compatability:  false;
 
 // Layout
 $space: $body-line-height;
-$navbar-height: $space*2rem;
+$navbar-height: 10vh;
 
 // Animation
 $duration: 300ms;
 
 // Breakpoints
+$mobile: 600px;
 $tablet: 768px;
+$lap:    900px;

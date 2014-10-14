@@ -62,8 +62,16 @@ p{
 a{
   text-decoration: none;
   color: $dark;
-  background: $light;
+  background: transparentize($light, 0.1);
+  text-shadow: none;
   padding: 0 $space*0.5rem;
+  &:hover{
+    background: $light;
+  }
+  &:active{
+    color: $light;
+    background: $dark;
+  }
 }
 
 ul, ol {
@@ -71,3 +79,16 @@ ul, ol {
 }
 
 small { @include ktype(-1,0,1); }
+
+blockquote{
+  p{
+    font-family: $fancy;
+    @include ktype(4, 1, 1);
+  }
+  cite{
+    float: right;
+    @include ktype(2, 1, 1);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}

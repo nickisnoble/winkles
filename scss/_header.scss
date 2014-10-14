@@ -10,13 +10,16 @@
   text-transform: uppercase;
   background: $dark;
   padding: 0;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid $light;
   white-space: nowrap;
-  nav{
-    float: right;
+  nav{ 
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
     text-align: right;
     height: 100%;
-    font-size: $navbar-height - ($navbar-height/2);
+    font-size: $navbar-height/4;
   }
   li{
     height: 100%;
@@ -42,17 +45,28 @@
 }
 
 .brand{
-  display: inline-block;
-  margin: 0 0 0 ($space*(2rem))*-1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 33.56%;
   font-size: $navbar-height - ($navbar-height/2);
   line-height: $navbar-height;
+  text-align: center;
+  border-right: 3px solid $light;
+  background: rgba(255,255,255,0.9);
   & a{
-    padding-left: ($space*2rem);
+    padding: 0;
+    width: 100%;
+    display: block;
     color: $dark;
-    background: rgba(255,255,255,0.9);
-    &:hover{
+  }
+  &:hover{
+    background: $light;
+    a{
       color: $dark;
-      background: $light;
     }
   }
 }
