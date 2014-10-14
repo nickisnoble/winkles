@@ -10,6 +10,7 @@
     float: right;
   }
   .copyright, .social{
+    white-space: nowrap;
     display: inline;
     line-height: $navbar-height;
     font-size: $navbar-height/3;
