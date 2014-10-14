@@ -20,3 +20,10 @@
   background-repeat: no-repeat;
 }
 
+.section-header{
+  @extend .backgrounded;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: ($space*2rem) 0;
+}

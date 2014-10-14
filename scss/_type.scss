@@ -21,21 +21,29 @@ h2 {
 }
 h3 { 
   @include ktype(3, 1, 1);
-  @extend %headings; 
+  @extend %headings;
+  @extend %small-headings; 
 }
 h4 { 
   @include ktype(2, 1, 1);
-  @extend %headings; 
+  @extend %headings;
+  @extend %small-headings; 
 }
 h5 { 
   @include ktype(1, 1, 0);
-  @extend %headings; 
+  @extend %headings;
+  @extend %small-headings; 
 }
 h6 { 
   @include ktype(0, 1, 0);
   @extend %headings;
+  @extend %small-headings;
   font-weight: normal;
   text-transform: capitalize;
+}
+
+%small-headings{
+  margin-bottom: 0;
 }
 
 %base-type{
