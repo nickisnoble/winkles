@@ -1,0 +1,128 @@
+progress[value] { // quick reset
+  appearance: none;
+  border: none;
+  background-color: whiteSmoke;
+  border-radius: none;
+  box-shadow: none;
+  color: royalblue;
+  position: relative;
+  margin: 0; 
+}
+
+#player{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: $navbar-height;
+  width: 100%;
+  z-index: 2;
+  .controls{
+    position: absolute;
+    left: ($space*2rem);
+    bottom: 0;
+    display: table;
+    margin-bottom: $space*0.8em;
+  }
+  button{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 0.6rem;
+    height: ($space*2em);
+    width: ($space*2em);
+    margin: 2px;
+    border-radius: ($space*1em);
+    border: 3px solid $light;
+    background: $dark;
+    color: $light;
+    outline: none;
+    cursor: pointer;
+  }
+  .play{
+    font-size: 0.8rem;
+    padding-right: 1px;
+    transition: none;
+    background: $light;
+    color:$dark;
+    &.active{
+      padding: 0;
+      background: $dark;
+      color:$light;
+    }
+  }
+  i{
+    transition: none;
+  }
+  .ff{padding-right: 1px;}
+  .meta{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: $navbar-height/2;
+    background: $dark;
+    text-align: center;
+    border-top: 3px solid $light;
+    border-left: 3px solid $light;
+    small{
+      margin: 0;
+    }
+  }
+  .track-title{
+    border-top: 3px solid $light;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: absolute;
+    left: ($space*2rem);
+    bottom: 0;
+    height: $navbar-height/2;
+    padding: 0 ($space*1em);
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0,0,0,0.9);
+  }
+  .track{
+    width: 90%;
+    height: $navbar-height/2;
+    border-top: 3px solid $light;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    &[value]{
+      // opacity: 1;
+      // transform: translateY(0);
+      &::-webkit-progress-bar{
+        background-color: rgba(0,0,0,1);
+      }
+      &::-webkit-progress-value{
+        background-color: $dark;
+      }
+      &::-moz-progress-bar{
+        background-color: rgba(0,0,0,1);
+      }
+      &::-moz-progress-value{
+        background-color: $dark;
+      }
+    }
+    &:not(value), &[value="0"]{
+      // opacity: 0;
+      // transform: translateY(100%);
+    }
+  }
+}
+
+// .track{
+//   &[value]{
+//     & + .track-title{
+//       transform: translateY(0%);
+//     }
+//   }
+//   &:not(value), &[value="0"]{
+//     & + .track-title{
+//       transform: translateY(100%);
+//     }
+//   }
+// }
